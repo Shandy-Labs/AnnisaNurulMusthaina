@@ -1,0 +1,226 @@
+/* ========================= */
+/* CERITA PAGE */
+/* cerita.html */
+/* ========================= */
+
+.story-hero {
+    width: 100%;
+    height: 100vh;
+
+    background: #d58a94;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.story-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.story-hero-content {
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+    color: white;
+
+    width: 90%;
+    max-width: 900px;
+}
+
+.story-hero-content h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.story-hero-content p {
+    font-size: 24px;
+    line-height: 1.8;
+}
+
+/* ========================= */
+/* OPENING */
+/* ========================= */
+
+.story-opening {
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 100px auto;
+}
+
+.story-container {
+    text-align: center;
+}
+
+.story-small-title {
+    color: #d58a94;
+
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.story-container h2 {
+    font-size: 50px;
+
+    margin: 20px 0;
+}
+
+.story-container p {
+    font-size: 20px;
+    line-height: 2;
+
+    color: #555;
+}
+
+/* ========================= */
+/* FOTO BESAR */
+/* ========================= */
+
+.story-image-section {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.story-image-section img {
+    width: 100%;
+    height: 650px;
+
+    object-fit: cover;
+
+    border-radius: 30px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ========================= */
+/* STORY CONTENT */
+/* ========================= */
+
+.story-content {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(350px, 1fr));
+
+    gap: 30px;
+
+    margin-bottom: 100px;
+}
+
+.story-box-large {
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.story-box-large h2 {
+    color: #d58a94;
+
+    margin-bottom: 20px;
+}
+
+.story-box-large p {
+    line-height: 1.9;
+
+    color: #555;
+}
+
+/* ========================= */
+/* QUOTES */
+/* ========================= */
+
+.story-quotes {
+    width: 90%;
+    max-width: 1000px;
+
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+.story-quotes-box {
+    background:
+        linear-gradient(135deg,
+            #d58a94,
+            #ebb2bc);
+
+    padding: 60px;
+
+    border-radius: 30px;
+
+    text-align: center;
+
+    color: white;
+
+    font-size: 28px;
+    line-height: 1.8;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* ========================= */
+/* BUTTON */
+/* ========================= */
+
+.story-button-wrapper {
+    display: flex;
+
+    justify-content: center;
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 100px;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media(max-width:768px) {
+
+    .story-hero-content h1 {
+        font-size: 45px;
+    }
+
+    .story-hero-content p {
+        font-size: 18px;
+    }
+
+    .story-container h2 {
+        font-size: 35px;
+    }
+
+    .story-container p {
+        font-size: 17px;
+    }
+
+    .story-image-section img {
+        height: 400px;
+    }
+
+    .story-quotes-box {
+        font-size: 20px;
+        padding: 35px;
+    }
+
+}

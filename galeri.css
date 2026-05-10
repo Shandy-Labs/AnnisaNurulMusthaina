@@ -1,0 +1,104 @@
+/* ========================= /
+/ GALERI PAGE /
+/ ========================= */
+
+.gallery-container {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 60px auto;
+}
+
+/* ========================= /
+/ TITLE /
+/ ========================= */
+
+.gallery-title {
+    text-align: center;
+
+    font-size: 50px;
+    color: #d58a94;
+
+    margin-bottom: 15px;
+}
+
+.gallery-subtitle {
+    text-align: center;
+
+    color: #777;
+
+    margin-bottom: 50px;
+
+    font-size: 18px;
+}
+
+/* ========================= /
+/ GRID /
+/ ========================= */
+
+.gallery {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 25px;
+}
+
+/* ========================= /
+/ IMAGE /
+/ ========================= */
+
+.gallery img {
+    width: 100%;
+    height: 320px;
+
+    object-fit: cover;
+
+    border-radius: 25px;
+
+    transition: 0.4s;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ========================= /
+/ HOVER /
+/ ========================= */
+
+.gallery img:hover {
+    transform: scale(1.03);
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* ========================= /
+/ BUTTON /
+/ ========================= */
+
+.gallery-button {
+    margin-top: 60px;
+
+    display: flex;
+    justify-content: center;
+}
+
+/* ========================= /
+/ RESPONSIVE /
+/ ========================= */
+
+@media(max-width:768px) {
+
+    .gallery-title {
+        font-size: 35px;
+    }
+
+    .gallery-subtitle {
+        font-size: 16px;
+    }
+
+    .gallery img {
+        height: 250px;
+    }
+
+}

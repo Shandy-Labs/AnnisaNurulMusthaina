@@ -1,0 +1,231 @@
+/* ========================= */
+/* ABOUT PAGE */
+/* ========================= */
+
+.about-hero {
+    width: 100%;
+    height: 60vh;
+
+    background: url("../assets/img/Background-Tentang.jpg") center/cover;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+    color: white;
+
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 20px;
+}
+
+.about-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 60px 0;
+}
+
+/* ========================= */
+/* INTRO */
+/* ========================= */
+
+.intro-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
+    align-items: center;
+
+    margin-bottom: 80px;
+}
+
+.intro-image img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.small-title {
+    color: #d58a94;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.intro-text h2 {
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+.intro-text p {
+    line-height: 1.8;
+    color: #555;
+}
+
+/* ========================= */
+/* INFO */
+/* ========================= */
+
+.info-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+
+    margin-bottom: 80px;
+}
+
+.info-card {
+    background: white;
+
+    padding: 30px;
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.info-card h3 {
+    color: #d58a94;
+    margin-bottom: 10px;
+}
+
+/* ========================= */
+/* STORY */
+/* ========================= */
+
+.story-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+
+    margin-bottom: 80px;
+}
+
+.story-box {
+    background: #fff;
+
+    padding: 30px;
+    border-radius: 20px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.story-box:hover {
+    transform: translateY(-5px);
+}
+
+.story-box h2 {
+    color: #d58a94;
+    margin-bottom: 15px;
+}
+
+.story-box p {
+    color: #555;
+    line-height: 1.7;
+}
+
+.button-wrapper {
+    display: flex;
+    gap: 20px;
+
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media(max-width:768px) {
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .intro-section {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-text h2 {
+        font-size: 30px;
+    }
+
+}
+
+.quotes-section {
+    margin-bottom: 60px;
+}
+
+.quote-card {
+    background: linear-gradient(135deg, #d58a94, #f3b1bc);
+
+    padding: 50px;
+    border-radius: 25px;
+
+    text-align: center;
+    color: white;
+
+    font-size: 24px;
+    line-height: 1.7;
+}
+
+.preview-gallery {
+    margin-bottom: 80px;
+}
+
+.preview-gallery h2 {
+    text-align: center;
+    margin-bottom: 30px;
+
+    font-size: 35px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 300px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    transition: 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.03);
+}
